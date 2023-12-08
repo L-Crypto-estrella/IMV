@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #E25555;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #FFFEF2;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  position: fixed;
+  left: 50vw;
+  transform: translateX(-50%);
+  top: 8vh;
+}
+
+a {
+  color: #FFFEF2;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav {
+  position: relative;
+  font-size: 1.6rem;
+  z-index: 1;
+}
+
+.top-left {
+  position: fixed;
+  top: 8vh;
+  left: 4vw;
+}
+
+.top-right {
+  position: fixed;
+  top: 8vh;
+  right: 4vw;
+}
+
+.bottom-left {
+  position: fixed;
+  bottom: 8vh;
+  left: 4vw;
+}
+
+.bottom-right {
+  position: fixed;
+  bottom: 8vh;
+  right: 4vw;
+}
+
+.bottom-center {
+  position: fixed;
+  bottom: 4vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* homepage */
+
+.hero {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero img {
+  width: 30%;
+  transform: translateY(-20%);
+}
+
+.centered-image {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 15vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-image img {
+  width: 30%;
+}
+
+.lang-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 50vw;
+  text-align: center;
+  position: relative;
+}
+
+.lang-wrapper * {
+  margin: 0;
+  padding: 0;
+}
+
+.lang-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.lang-container button {
+  background-color: transparent;
+  color: #FFFEF2;
+  border: 0;
+  width: 20%;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.lang-wrapper .lang-contents {
+  position: absolute;
+  margin-top: 40px;
+  height: 80%;
+  overflow: scroll;
+  width: 100%;
+  text-align: justify;
+}
+
+/* Stile für das Buchungsformular */
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px;
+    text-align: left;
+}
+
+.booking-form h2 {
+    color: white;
+}
+
+.booking-form label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.booking-form button[type="submit"] {
+    background-color: #6e1515;
+    color: rgb(217, 199, 199);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.slider-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  overflow: hidden;
+}
+
+.slider {
+    display: flex;
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    item-align: center;
+    justify-content: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.prev-button,
+.next-button {
+  font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    color: white;
+  background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.next-button {
+    right: 0;
+}
+

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercee - Offizielle Webseite</title>
     <link rel="stylesheet" href="main.css"> 
+    <script src="script_bookings.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@100;400;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,13 +25,24 @@
             <!-- Social Media Icons hier -->
         </div>
     </header>
-    <main>
-        <section class="hero">
-            <img src="title1.png" alt="Titelbild" >
-        </section>
-        <section class="centered-image">
-            <img src="bild1.png" alt="Bild 1" class="centered-image">
-        </section>
+    <main class="container">
+        <div class="booking-form">
+        <a href="index.html" class="back-button">
+            <h2>Booking Request</h2>
+          </a>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Request:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </main>
 </body>
 </html>
